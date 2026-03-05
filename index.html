@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    content="IMS 92 Formation - Institut des Métiers du Sport. Formations en secourisme, sauvetage aquatique et sécurité
+    au travail : PSC, SST, PSE, BNSSA, BSB.">
+    <title>IMS 92 Formation | Expert en secourisme et sauvetage aquatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container nav-container" style="position: relative;">
+            <!-- Logo façon Ruban -->
+            <div class="logo-ruban"
+                style="position: absolute; top: 0; left: 15px; background: #ffffff; padding: 10px 15px 15px; border-radius: 0 0 10px 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.12); z-index: 1050; border: 1px solid var(--border-light); border-top: none;">
+                <a href="#accueil"><img src="logo blanc ok.png" alt="Logo IMS 92 Formation"
+                        style="height: 90px; width: auto; display: block;"></a>
+            </div>
+
+            <!-- Titre institutionnel caché sur petits écrans -->
+            <div style="margin-left: 350px; color: var(--clr-text); font-weight: 800; font-size: 1.1rem; line-height: 1.2; display: flex; flex-direction: column; justify-content: center;"
+                class="desktop-only">
+                <span style="color: var(--clr-primary);">IMS 92</span>
+                <span style="font-size: 0.85rem; font-weight: 500; color: var(--clr-text-muted);">Institut des Métiers
+                    du Sport</span>
+            </div>
+
+            <nav style="margin-left: auto;">
+                <ul class="nav-links">
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#qui-sommes-nous">Présentation</a></li>
+
+                    <li class="dropdown">
+                        <a href="#formations" class="dropbtn">Nos Formations ▾</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-group">
+                                <h4>Secourisme & Travail</h4>
+                                <a href="#formation-psc">PSC (Prévention Secours)</a>
+                                <a href="#formation-sst">SST (Santé Sécurité)</a>
+                                <a href="#formation-mac-sst">MAC SST (Recyclage)</a>
+                            </div>
+                            <div class="dropdown-group">
+                                <h4>Secourisme en Équipe</h4>
+                                <a href="#formation-pse">PSE 1 & 2</a>
+                                <a href="#formation-fc-pse">Formation Continue PSE</a>
+                            </div>
+                            <div class="dropdown-group">
+                                <h4>Sauvetage Aquatique</h4>
+                                <a href="#formation-bsb">BSB</a>
+                                <a href="#formation-fc-bsb">FC BSB</a>
+                                <a href="#formation-bnssa">BNSSA</a>
+                                <a href="#formation-fc-bnssa">FC BNSSA</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="#calendrier">Agenda</a></li>
+                    <li><a href="#inscription">Inscription</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Accueil / Hero -->
+        <section id="accueil" class="hero hero-vertical">
+            <div class="hero-bg"></div>
+            <div class="container hero-container-vertical">
+
+                <!-- Version E: Encart Mini Agenda Annuel Horizontal Global -->
+                <div class="hero-calendar-horizontal">
+                    <div class="cal-header-horiz">
+                        <span class="cal-month">Calendrier des sessions 2026</span>
+                        <a href="#calendrier" class="btn-link">Voir tout l'agenda →</a>
+                    </div>
+
+                    <div class="yearly-grid-horiz">
+                        <div class="y-month y-past">Jan<span class="y-mobile-hide">vier</span></div>
+                        <div class="y-month y-past">Fév<span class="y-mobile-hide">rier</span></div>
+                        <div class="y-month y-past">Mars</div>
+
+                        <div class="y-month y-active" title="PSE 1 + FC PSE">
+                            <span class="y-badge">2</span>
+                            Avril
+                            <span class="y-formation">PSE 1 · FC PSE</span>
+                        </div>
+                        <div class="y-month y-active" title="BNSSA + PSC">
+                            <span class="y-badge">2</span>
+                            Mai
+                            <span class="y-formation">BNSSA · PSC</span>
+                        </div>
+                        <div class="y-month y-active" title="PSC + SST">
+                            <span class="y-badge">2</span>
+                            Juin
+                            <span class="y-formation">PSC · SST</span>
+                        </div>
+
+                        <div class="y-month">Juil<span class="y-mobile-hide">let</span></div>
+                        <div class="y-month">Août</div>
+                        <div class="y-month y-active" title="BSB">
+                            <span class="y-badge">1</span>
+                            Sept<span class="y-mobile-hide">embre</span>
+                            <span class="y-formation">BSB</span>
+                        </div>
+
+                        <div class="y-month">Oct<span class="y-mobile-hide">obre</span></div>
+                        <div class="y-month">Nov<span class="y-mobile-hide">embre</span></div>
+                        <div class="y-month">Déc<span class="y-mobile-hide">embre</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-content hero-content-center">
+                    <h1>Formez-vous aux métiers du <span>Sauvetage</span> et du <span>Secourisme</span></h1>
+                    <p>L'IMS 92 vous accompagne dans l'acquisition de compétences en secourisme. Des formations
+                        professionnelles de qualité encadrées par des experts passionnés.</p>
+                    <div class="hero-buttons hero-buttons-center">
+                        <a href="#formations" class="btn btn-primary">Découvrir nos formations</a>
+                        <a href="#inscription" class="btn btn-outline">S'inscrire à une session</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Qui Sommes Nous -->
+        <section id="qui-sommes-nous" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Qui sommes-nous ?</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>L'Institut des Métiers du Sport 92</h3>
+                        <p>L'IMS 92 est un organisme de formation de premier plan spécialisé dans les domaines du
+                            <strong>secourisme</strong> et du <strong>sauvetage aquatique</strong>. Notre mission est de
+                            former des citoyens, des professionnels et des équipes aux gestes qui sauvent et à la
+                            prévention des risques.
+                        </p>
+                        <p>Nous intervenons auprès des entreprises, des collectivités et des particuliers pour dispenser
+                            des formations reconnues par l'État. Que ce soit pour devenir sauveteur aquatique (BNSSA,
+                            BSB), intervenir en équipe de secours (PSE) ou assurer la sécurité au sein de votre
+                            entreprise (SST), nos formateurs certifiés vous préparent efficacement à réagir face à
+                            l'urgence.</p>
+                        <ul class="features-list">
+                            <li>✓ Formateurs expérimentés et certifiés</li>
+                            <li>✓ Matériel pédagogique moderne et adapté</li>
+                            <li>✓ Accompagnement personnalisé</li>
+                            <li>✓ Taux de réussite exceptionnel</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="formation_secourisme_v5.png" alt="Formation IMS 92 - Secourisme et Sauvetage"
+                            style="border-radius: var(--border-radius); box-shadow: var(--shadow-lg); width: 100%; height: auto; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nos Formations -->
+        <section id="formations" class="formations-section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Toutes nos formations</h2>
+                    <p class="subtitle">Des parcours adaptés à vos objectifs, du secourisme civique à l'expertise
+                        professionnelle aquatique.</p>
+                    <div class="divider"></div>
+                </div>
+
+                <!-- Catégorie 1 -->
+                <h3 class="category-title">SANTÉ & SÉCURITÉ AU TRAVAIL ET CIVIQUE</h3>
+                <div class="cards-grid">
+                    <div class="card" id="formation-psc">
+                        <div class="card-header">
+                            <h4>PSC</h4>
+                            <span class="badge">Prévention et Secours Civiques</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Apprenez les gestes de premiers secours pour réagir face à des situations de la vie
+                                quotidienne (Malaise, traumatismes, etc).</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="formation-sst">
+                        <div class="card-header">
+                            <h4>SST</h4>
+                            <span class="badge">Sauveteur Secouriste du Travail</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Formation indispensable en entreprise : devenez le premier maillon de la chaîne des
+                                secours sur votre lieu de travail et acteur de la prévention.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="formation-mac-sst">
+                        <div class="card-header">
+                            <h4>MAC SST</h4>
+                            <span class="badge">Maintien et Actualisation</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Renouvelez vos compétences de Sauveteur Secouriste du Travail (obligatoire tous les 24
+                                mois) pour rester opérationnel et à jour.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie 2 -->
+                <h3 class="category-title mt-lg">SECOURISME EN ÉQUIPE</h3>
+                <div class="cards-grid">
+                    <div class="card" id="formation-pse">
+                        <div class="card-header">
+                            <h4>PSE 1 & 2</h4>
+                            <span class="badge">Premiers Secours en Équipe</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Formations qualifiantes pour intervenir au sein d'un poste de secours en équipe avec du
+                                matériel de réanimation et de sauvetage.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="formation-fc-pse">
+                        <div class="card-header">
+                            <h4>FC PSE</h4>
+                            <span class="badge">Formation Continue PSE</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Recyclage annuel obligatoire pour maintenir la validité des diplômes PSE 1 et PSE 2 et
+                                réviser les nouvelles recommandations.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catégorie 3 -->
+                <h3 class="category-title mt-lg">SÉCURITÉ ET SAUVETAGE AQUATIQUE</h3>
+                <div class="cards-grid">
+                    <div class="card" id="formation-bnssa">
+                        <div class="card-header">
+                            <h4>BNSSA</h4>
+                            <span class="badge">Sécurité Sauvetage Aquatique</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Brevet National indispensable pour la surveillance en baignade d’accès non payant et
+                                certaines baignades aménagées. Devenez nageur-sauveteur !</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="formation-fc-bnssa">
+                        <div class="card-header">
+                            <h4>FC BNSSA</h4>
+                            <span class="badge">Recyclage BNSSA</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Renouvellement quinquennal du BNSSA comprenant un maintien des compétences secouristes
+                                (PSE1 minimum) et épreuves aquatiques.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="formation-bsb">
+                        <div class="card-header">
+                            <h4>BSB</h4>
+                            <span class="badge">Brevet Surveillant de Baignade</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Formation dédiée à la surveillance des baignades en centre de vacances et de loisirs
+                                (ACM). Idéal pour les animateurs.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="formation-fc-bsb">
+                        <div class="card-header">
+                            <h4>FC BSB</h4>
+                            <span class="badge">Recyclage BSB</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Mise à jour quinquennale pour conserver les prérogatives du Brevet de Surveillant de
+                                Baignade en centre aéré.</p>
+                            <a href="#inscription" class="btn btn-sm btn-primary">Voir les sessions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Calendrier / Agenda -->
+        <section id="calendrier" class="agenda-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Agenda des sessions à venir</h2>
+                    <p class="subtitle">Consultez nos prochaines dates de formations programmées.</p>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="table-container">
+                    <table class="agenda-table">
+                        <thead>
+                            <tr>
+                                <th>Formation</th>
+                                <th>Dates</th>
+                                <th>Lieu</th>
+                                <th>Disponibilité</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Printemps -->
+                            <tr class="month-row">
+                                <td colspan="5">Avril 2026</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PSE 1</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Secourisme en Équipe</span></td>
+                                <td>Du 15 au 19 Avril 2026</td>
+                                <td>Centre IMS 92</td>
+                                <td><span class="status-indicator status-open">Places disponibles</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">S'inscrire</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>FC PSE</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Secourisme en Équipe</span></td>
+                                <td>24 et 25 Avril 2026</td>
+                                <td>Centre IMS 92</td>
+                                <td><span class="status-indicator status-few">2 places</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">S'inscrire</a></td>
+                            </tr>
+
+                            <tr class="month-row">
+                                <td colspan="5">Mai 2026</td>
+                            </tr>
+                            <tr>
+                                <td><strong>BNSSA</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Sauvetage Aquatique</span></td>
+                                <td>Les Samedis de Mai 2026</td>
+                                <td>Piscine Partenaire</td>
+                                <td><span class="status-indicator status-few">Dernières places</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">S'inscrire</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>PSC</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Secourisme Civique</span></td>
+                                <td>20 Mai 2026</td>
+                                <td>Centre IMS 92</td>
+                                <td><span class="status-indicator status-open">Places disponibles</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">S'inscrire</a></td>
+                            </tr>
+
+                            <!-- Eté -->
+                            <tr class="month-row">
+                                <td colspan="5">Juin 2026</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PSC</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Secourisme Civique</span></td>
+                                <td>2 Juin 2026</td>
+                                <td>Centre IMS 92</td>
+                                <td><span class="status-indicator status-full">Complet</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline"
+                                        style="opacity: 0.5; pointer-events: none;">S'inscrire</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>SST</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Santé au Travail</span></td>
+                                <td>10 et 11 Juin 2026</td>
+                                <td>Intra-entreprise</td>
+                                <td><span class="status-indicator status-open">Sur demande</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">Nous contacter</a></td>
+                            </tr>
+
+                            <!-- Automne / Fin d'année en aperçu  -->
+                            <tr class="month-row">
+                                <td colspan="5">Septembre 2026</td>
+                            </tr>
+                            <tr>
+                                <td><strong>BSB</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Sauvetage Aquatique</span></td>
+                                <td>Du 7 au 11 Septembre 2026</td>
+                                <td>Piscine Partenaire</td>
+                                <td><span class="status-indicator status-open">Ouverture prévue</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">Pré-inscription</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>PSE 1 & 2</strong> <span class="badge"
+                                        style="font-size: 0.6rem; margin-left: 5px;">Sécurité en Équipe</span></td>
+                                <td>28 Sept. au 4 Octobre 2026</td>
+                                <td>Centre IMS 92</td>
+                                <td><span class="status-indicator status-open">Inscriptions ouvertes</span></td>
+                                <td><a href="#inscription" class="btn btn-sm btn-outline">S'inscrire</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Inscription -->
+        <section id="inscription" class="inscription-section">
+            <div class="container">
+                <div class="inscription-wrapper">
+                    <div class="inscription-info">
+                        <h2>Prêt à vous engager ?</h2>
+                        <p>Consultez notre planning des prochaines sessions ou contactez-nous pour organiser une
+                            formation sur-mesure au sein de votre structure.</p>
+                        <div class="contact-details">
+                            <p>📞 06 70 06 21 83</p>
+                            <p>✉️ contact@ims92-formation.com</p>
+                        </div>
+                    </div>
+                    <div class="inscription-form-box">
+                        <h3>Demande d'information / Inscription</h3>
+                        <form class="contact-form"
+                            onsubmit="event.preventDefault(); alert('Formulaire de démonstration validé !');">
+                            <div class="form-group">
+                                <label for="name">Nom / Prénom</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="choix-formation">Formation souhaitée</label>
+                                <select id="choix-formation">
+                                    <option>Choisir une formation...</option>
+                                    <option>PSC</option>
+                                    <option>SST / MAC SST</option>
+                                    <option>PSE 1 / PSE 2 / FC PSE</option>
+                                    <option>BNSSA / FC BNSSA</option>
+                                    <option>BSB / FC BSB</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>IMS 92 <span>FORMATION</span></h4>
+                <p>L'excellence pédagogique au service du secours aquatique et terrestre.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens rapides</h4>
+                <ul>
+                    <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+                    <li><a href="#formations">Nos formations</a></li>
+                    <li><a href="#inscription">Contact & Inscription</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">CGV / Règlement intérieur</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 IMS 92 Formation. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
