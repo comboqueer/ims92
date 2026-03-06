@@ -1012,13 +1012,7 @@ footer {
         flex-direction: column;
     }
 
-    /* Version E responsive */
-    .yearly-grid-horiz {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 6px;
-    }
-
-    .y-mobile-hide {
+    .mini-agenda-badge {
         display: none;
     }
 }
